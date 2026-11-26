@@ -18,13 +18,13 @@ const BENEFITS: Array<{
   {
     id: 'build',
     title: 'Build for real',
-    text: 'Working demos, not slideware. Judges test what you built.',
+    text: 'Develop practical applications that address real-world social challenges.',
     icon: Code2,
   },
   {
     id: 'team',
     title: 'Team up',
-    text: 'Exactly two participants per team: one leader and one partner.',
+    text: 'Exactly 2 members per team — one Team Leader and one Team Partner.',
     icon: Users,
   },
   {
@@ -34,9 +34,9 @@ const BENEFITS: Array<{
     icon: Trophy,
   },
   {
-    id: 'mentor',
+    id: 'impact',
     title: 'Social Impact',
-    text: 'Every team builds an application that creates positive change.',
+    text: 'One theme. Meaningful change. Build technology that makes a difference.',
     icon: Award,
   },
 ]
@@ -134,7 +134,7 @@ export default function CompetitionCanvas({ regOpen, regClose, eventDate, venue 
               <span className="competition-heading__impact">Impact.</span>
             </h2>
             <p className="competition-description competition-reveal competition-reveal--3">
-              Appathon challenges students to identify real-world social problems and develop innovative applications that create positive change — then put them in front of real judges and peers.
+              Appathon challenges undergraduate students to build innovative applications that address real-world social problems, meet community needs and create meaningful positive change through technology.
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export default function CompetitionCanvas({ regOpen, regClose, eventDate, venue 
                       </span>
                     )}
                     {id === 'win' && <span className="benefit-shine" />}
-                    {id === 'mentor' && (
+                    {id === 'impact' && (
                       <span className="benefit-network">
                         <i />
                         <i />

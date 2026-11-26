@@ -259,7 +259,7 @@
   border-radius: 18px 7px 18px 18px;
 }
 
-.competition-benefit--mentor {
+.competition-benefit--impact {
   bottom: 9%;
   left: 2%;
   border-radius: 7px 18px 18px 18px;
@@ -534,7 +534,7 @@
     animation: competition-shine 850ms ease-out both;
   }
 
-  .competition-benefit--mentor:hover .benefit-network b {
+  .competition-benefit--impact:hover .benefit-network b {
     animation: competition-point-travel 1.2s ease-in-out infinite;
     opacity: 1;
   }
@@ -663,7 +663,7 @@
   .competition-benefit--build { border-radius: 15px 7px 15px 15px; }
   .competition-benefit--team { border-radius: 7px 15px 15px 15px; }
   .competition-benefit--win { border-radius: 15px 15px 7px 15px; }
-  .competition-benefit--mentor { border-radius: 15px 15px 15px 7px; }
+  .competition-benefit--impact { border-radius: 15px 15px 15px 7px; }
 
   .competition-benefit__icon {
     flex-basis: 24px;
@@ -727,7 +727,7 @@
   .competition-benefit--build { justify-self: start; width: 94%; }
   .competition-benefit--team { justify-self: end; width: 100%; }
   .competition-benefit--win { justify-self: start; width: 97%; }
-  .competition-benefit--mentor { justify-self: end; width: 95%; }
+  .competition-benefit--impact { justify-self: end; width: 95%; }
   .competition-benefit__text { font-size: 0.67rem; }
   .competition-heading { font-size: clamp(3rem, 11.5vw, 3.5rem); }
 }
