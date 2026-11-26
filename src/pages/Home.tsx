@@ -101,10 +101,10 @@ export default function Home() {
           <source src="/videos/social-impact-bg.mp4" type="video/mp4" />
         </video>
         <div className="home-cinematic__overlay" aria-hidden="true" />
+        <div className="home-cinematic__ribbons" aria-hidden="true" />
         <div className="home-cinematic__inner mx-auto max-w-7xl">
           <SectionHead eyebrow="Social Impact" title="One theme. Meaningful change." sub="Every team must develop an application based on the single Social Impact theme." />
           <Card className="glass-panel reveal-card mt-8 !p-8">
-            <span className="glass-sweep" aria-hidden="true" />
             <p className="text-white/75 leading-relaxed">
               Social Impact is the central theme of Appathon. Participants are challenged to build innovative applications that address real-world social problems, meet community needs and create meaningful, lasting positive change through technology. Projects should combine creativity and practical solutions to make a genuine difference in people's lives.
             </p>
@@ -115,8 +115,7 @@ export default function Home() {
           </Card>
 
           <div className="mt-4 grid gap-4 lg:grid-cols-2 lg:items-start">
-            <div className="glass-panel reveal-card home-awards-panel">
-              <span className="glass-sweep" aria-hidden="true" />
+            <div className="reveal-card home-awards-panel">
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <div>
                   <Trophy className="w-7 h-7 text-brand" />
@@ -130,17 +129,17 @@ export default function Home() {
                 </Link>
               </div>
               <div className="home-awards-rail" aria-label="Prizes and recognition">
-                <article className="home-award-card home-award-card--first">
+                <article className="home-award-card glass-panel glass-panel--first home-award-card--first">
                   <div className="home-award-visual" aria-hidden="true"><span className="home-award-medal"><b>1</b></span></div>
                   <p className="home-award-kicker">First Prize</p>
                   <p className="home-award-value">{settings.firstPrize}</p>
                 </article>
-                <article className="home-award-card home-award-card--second">
+                <article className="home-award-card glass-panel home-award-card--second">
                   <div className="home-award-visual" aria-hidden="true"><span className="home-award-medal"><b>2</b></span></div>
                   <p className="home-award-kicker">Second Prize</p>
                   <p className="home-award-value">{settings.secondPrize}</p>
                 </article>
-                <article className="home-award-card home-award-card--certificates">
+                <article className="home-award-card glass-panel home-award-card--certificates">
                   <div className="home-award-visual" aria-hidden="true"><span className="home-award-certificate" /></div>
                   <p className="home-award-kicker">Participation Certificate</p>
                   <p className="home-award-value">For participants</p>
@@ -148,7 +147,6 @@ export default function Home() {
               </div>
             </div>
             <Card className="glass-panel reveal-card !p-8">
-              <span className="glass-sweep" aria-hidden="true" />
               <Megaphone className="w-7 h-7 text-brand" />
               <h3 className="font-display text-4xl mt-4">Important announcements</h3>
               <ul className="mt-5 space-y-4">
