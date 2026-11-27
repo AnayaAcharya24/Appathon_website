@@ -19,7 +19,8 @@ export default function Prizes() {
       />
       <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-4">
         {prizes.map((p, i) => (
-          <Card key={p.place} className={`!p-8 text-center ${i === 0 ? 'border-brand/40 bg-brand/10' : ''}`}>
+          <Card key={p.place} className={`glass-panel prize-card !p-8 text-center ${i === 0 ? 'glass-panel--first' : ''}`}>
+            <span className="prize-sweep" aria-hidden="true" />
             <p.icon className="w-9 h-9 text-brand mx-auto" />
             <p className="text-xs tracking-[0.25em] uppercase text-white/50 mt-4">{p.place}</p>
             <p className="font-display text-4xl mt-2">{p.value}</p>

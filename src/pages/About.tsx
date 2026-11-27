@@ -1,5 +1,8 @@
 import { Compass, Eye, GraduationCap, Rocket, Target, Users } from 'lucide-react'
-import { PageHero, SectionHead } from '../components/Hero'
+import AboutHero from '../components/AboutHero'
+import CompetitionJourney from '../components/CompetitionJourney'
+import JudgingCriteria from '../components/JudgingCriteria'
+import { SectionHead } from '../components/Hero'
 import { Card } from '../components/ui'
 import { getSettings } from '../lib/store'
 
@@ -7,12 +10,10 @@ export default function About() {
   const settings = getSettings()
   return (
     <>
-      <PageHero
-        eyebrow="About Appathon"
-        title="Technology meets possibility."
-        subtext="Appathon — From Idea to Impact is an inter-collegiate innovation and application competition. It exists for one reason: to give students a real stage to turn what they learn into what they can build."
-      />
-      <section className="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12">
+      <AboutHero luminous />
+      <CompetitionJourney />
+      <JudgingCriteria />
+      <section className="about-introduction max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12">
         <div>
           <SectionHead
             eyebrow="Introduction"

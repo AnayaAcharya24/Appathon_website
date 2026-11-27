@@ -115,7 +115,7 @@ export default function Home() {
           </Card>
 
           <div className="mt-4 grid gap-4 lg:grid-cols-2 lg:items-start">
-            <div className="reveal-card home-awards-panel">
+            <Card className="glass-panel reveal-card home-awards-panel !p-8">
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <div>
                   <Trophy className="w-7 h-7 text-brand" />
@@ -129,23 +129,23 @@ export default function Home() {
                 </Link>
               </div>
               <div className="home-awards-rail" aria-label="Prizes and recognition">
-                <article className="home-award-card glass-panel glass-panel--first home-award-card--first">
+                <article className="home-award-card home-award-card--first">
                   <div className="home-award-visual" aria-hidden="true"><span className="home-award-medal"><b>1</b></span></div>
                   <p className="home-award-kicker">First Prize</p>
                   <p className="home-award-value">{settings.firstPrize}</p>
                 </article>
-                <article className="home-award-card glass-panel home-award-card--second">
+                <article className="home-award-card home-award-card--second">
                   <div className="home-award-visual" aria-hidden="true"><span className="home-award-medal"><b>2</b></span></div>
                   <p className="home-award-kicker">Second Prize</p>
                   <p className="home-award-value">{settings.secondPrize}</p>
                 </article>
-                <article className="home-award-card glass-panel home-award-card--certificates">
+                <article className="home-award-card home-award-card--certificates">
                   <div className="home-award-visual" aria-hidden="true"><span className="home-award-certificate" /></div>
                   <p className="home-award-kicker">Participation Certificate</p>
                   <p className="home-award-value">For participants</p>
                 </article>
               </div>
-            </div>
+            </Card>
             <Card className="glass-panel reveal-card !p-8">
               <Megaphone className="w-7 h-7 text-brand" />
               <h3 className="font-display text-4xl mt-4">Important announcements</h3>

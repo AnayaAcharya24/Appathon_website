@@ -10,6 +10,9 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  server: {
+    allowedHosts: ['5173-if5a15w0s7tralk5p8hqi-c44aba8d.sg2.manus.computer'],
+  },
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
